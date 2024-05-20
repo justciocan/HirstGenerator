@@ -25,7 +25,7 @@ tim = turtle.Turtle()
 tim.speed("fastest")
 tim.penup()
 tim.setpos(-250, -250)
-
+tim.hideturtle()
 
 def draw_line():
     for _ in range(10):
@@ -36,6 +36,7 @@ def draw_line():
 for _ in range(10):
     draw_line()
     tim.setpos(-250.0, tim.pos()[1] + 50.0)
+
 
 screen = turtle.Screen()
 screen.exitonclick()
